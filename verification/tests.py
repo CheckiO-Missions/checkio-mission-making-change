@@ -11,26 +11,31 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [8, [1, 3, 5]],
+            "answer": 3,
+            "explanation": "Outer Leftopian shillings"
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": [16, [1, 5, 6]],
+            "answer": 4,
+            "explanation": "East Frombazian pesos"
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [1, [3, 4, 5]],
+            "answer": None,
+            "explanation": "New Oldhemian dollars"
         },
         {
-            "input": [6, 7],
+            "input": [4, [3, 5]],
+            "answer": None,
+            "explanation": "Democratic Turnlandian grommits"
+        },
+        {
+            "input": [123456, [1, 6, 7, 456, 678, ]],
             "answer": 13,
-            "explanation": "6+7=?"
+            "explanation": "South Northcambrian pounds"
         }
     ]
 }
