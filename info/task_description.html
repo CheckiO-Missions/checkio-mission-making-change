@@ -8,44 +8,39 @@ When making purchases, Nicola would like to use the minumum number of coins poss
 For example, Outer Leftopia has coins with denomination 1, 3, and 5 shillings.  
 He wants to buy a souvenir that costs 13 shillings.  He can do that using two 5 shilling coins and one 3 shilling coin.
 </p>
-
 <p>
-    Sum two passed ints
+You can assume Nicola has access to an infinite number of coins of each denomination.  
+(He has a large bank account and access to an ATM).
 </p>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.svg" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.svg" alt="example" width="380px"/>
-</p>
 
-<p><i>( Explain input and output values )</i></p>
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> Two arguments. The first argument is as int: the value of the purchase.  
+    The second is a list of ints: the denominations of available coins.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> int. The minimum number of coins Nicola can use to make the purchase.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <textarea data-code="python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio(8, [1, 3, 5]) == 3
+checkio(16, [1, 5, 6]) == 4
     </textarea>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    <i>Besides helping Nicola make change, this is an example of a problem in combinatorial optimization.</i>
 </p>
 
 <p>
     <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
+    <i>Inputs are all positive integers.</i>
 </p>
