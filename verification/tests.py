@@ -16,8 +16,8 @@ TESTS = {
             "explanation": "Outer Leftopian shillings"
         },
         {
-            "input": [16, [1, 5, 6]],
-            "answer": 4,
+            "input": [12, [1, 4, 5]],
+            "answer": 3,
             "explanation": "East Frombazian pesos"
         }
     ],
