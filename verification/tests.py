@@ -33,8 +33,8 @@ TESTS = {
             "explanation": "Democratic Turnlandian grommits"
         },
         {
-            "input": [123456, [1, 6, 7, 456, 678, ]],
-            "answer": 13,
+            "input": [123456, [1, 6, 7, 456, 678]],
+            "answer": 187,
             "explanation": "South Northcambrian pounds"
         }
     ]
