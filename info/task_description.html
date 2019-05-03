@@ -1,4 +1,4 @@
-<p xmlns="http://www.w3.org/1999/html">
+<p>
 Nicola is taking a much needed vacation.  
 He'll be backpacking around some lesser-known countries.  
 Each has its own unique currency.
@@ -21,7 +21,7 @@ You can assume Nicola has access to an infinite number of coins of each denomina
 
 <p>
     <strong>Output: </strong> int. The minimum number of coins Nicola can use to make the purchase.
-    If the price cannot be made with the available denominations, return <i>None</i>.
+    If the price cannot be made with the available denominations, return {% if interpreter.slug == "js-node" %}<i>undefined</i>{% else %}<i>None</i>{% endif %}.
 </p>
 
 
@@ -30,10 +30,18 @@ You can assume Nicola has access to an infinite number of coins of each denomina
     <p>
         <strong>Example:</strong>
     </p>
-    <textarea data-code="python">
+    {% if interpreter.slug == "js-node" %}
+<pre class="brush: python">
+makingChange(8, [1, 3, 5]) == 2
+makingChange(12, [1, 4, 5]) == 3
+</pre>
+    {% else %}
+<pre class="brush: python">
 checkio(8, [1, 3, 5]) == 2
 checkio(12, [1, 4, 5]) == 3
-    </textarea>
+</pre>
+    {% endif %}
+
 </div>
 
 <p class="for_info_only">
