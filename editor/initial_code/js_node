@@ -1,8 +1,8 @@
 "use strict";
 
-function makingChange(els) {
+function makingChange(price, denominations) {
     // your code here
-    return els;
+    return 2;
 }
 
 var assert = require('assert');
