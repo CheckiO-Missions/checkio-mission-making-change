@@ -1,0 +1,55 @@
+<p>
+Nicola macht einen dringend benötigten Urlaub.  
+Er wird als Rucksacktourist einige weniger bekannte Länder bereisen.  
+Jedes hat seine eigene, einzigartige Währung.
+</p>
+<p>
+Beim Einkaufen möchte Nicola so wenig Münzen wie möglich verwenden.  
+In Outer Leftopia gibt es zum Beispiel Münzen mit einem Nennwert von 1, 3 und 5 Schilling.  
+Er möchte ein Souvenir kaufen, das 13 Shillings kostet.  Dafür kann er zwei 5-Schilling-Münzen und eine 3-Schilling-Münze verwenden.
+</p>
+<p>
+Sie können davon ausgehen, dass Nicola Zugang zu einer unendlichen Anzahl von Münzen jedes Nennwerts hat.  
+(Er hat ein großes Bankkonto und Zugang zu einem Geldautomaten).
+</p>
+
+
+<p>
+   <strong>Eingabe: </strong> Zwei Argumente. Das erste Argument ist ein int: der Preis des Kaufs.  
+    Das zweite Argument ist eine Liste von Ints: die Stückelungen der verfügbaren Münzen.
+</p>
+
+<p>
+   <strong>Ausgabe: </strong> int. Die Mindestanzahl von Münzen, die Nicola für den Kauf verwenden kann.
+    Wenn der Preis mit den verfügbaren Stückelungen nicht erzielt werden kann, geben Sie {% if interpreter.slug == "js-node" %}<i>undefined</i>{% else %}<i>None</i>{% endif %} zurück.
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiel:</strong>
+    </p>
+    {% if interpreter.slug == "js-node" %}
+<pre class="brush: python">
+makingChange(8, [1, 3, 5]) == 2
+makingChange(12, [1, 4, 5]) == 3
+</pre>
+    {% else %}
+<pre class="brush: python">
+checkio(8, [1, 3, 5]) == 2
+checkio(12, [1, 4, 5]) == 3
+</pre>
+    {% endif %}
+
+</div>
+
+<p class="for_info_only">
+    <strong>Wie es verwendet wird: </strong>
+    <i>Abgesehen davon, dass es Nicola hilft, Geld zu wechseln, ist dies ein Beispiel für ein Problem der kombinatorischen Optimierung.</i>
+</p>
+
+<p>
+    <strong>Vorbedingung:</strong>
+    <i>Die Eingaben sind alle positive ganze Zahlen.</i>
+</p>
